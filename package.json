@@ -1,6 +1,6 @@
 {
   "name": "smartx-components",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "smartx-components web-component",
   "main": "dist/smartx-components.min.js",
   "scripts": {
