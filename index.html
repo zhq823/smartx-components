@@ -13,7 +13,11 @@
         <supplier-list title="智会"></supplier-list>
 	</body>
 	<script>
-		testFun()
+        SmartxComponents.install();
+        testFun();
+        document.querySelector('supplier-list').addEventListener("emit", function(response) {
+            console.log("事件监听:", response)
+        })
 	</script>
 
 </html>
