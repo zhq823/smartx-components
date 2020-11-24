@@ -4,7 +4,7 @@
   "description": "smartx-components web-component",
   "main": "dist/smartx-components.min.js",
   "scripts": {
-    "build": "webpack -w --mode=production",
+    "build": "rimraf dist && webpack -w --mode=production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
