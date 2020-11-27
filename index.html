@@ -14,9 +14,8 @@
 	</body>
 	<script>
         SmartxComponents.install();
-        testFun();
         document.querySelector('supplier-list').addEventListener("emit", function(response) {
-            console.log("事件监听:", response)
+            console.log("事件监听:", response.detail)
         })
 	</script>
 

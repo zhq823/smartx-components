@@ -2,6 +2,7 @@
 const pkg = require('./package.json');
 const libraryName = pkg.name;
 const outputFile = libraryName + '.min.js';
+const path = require("path")
 
 module.exports = {
     mode: 'production',
@@ -12,6 +13,11 @@ module.exports = {
         path: __dirname + '/dist',
         filename: outputFile, // '[name].js'
         libraryTarget: 'umd',
+    },
+    resolve: {
+        alias: {
+            "@": path.resolve(__dirname, './src')
+        }
     },
     module: {
         rules: [
